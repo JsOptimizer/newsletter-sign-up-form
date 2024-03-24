@@ -3,12 +3,11 @@ import { SignupDetail } from '../components'
 
 const SignUp = () => {
   return (
-    <section className='sm:bg-Dark-Slate-Grey h-[100dvh] flex sm:items-center sm:justify-center'>
-    <section className='w-full h-full bg-light sm:w-[70%] sm:h-[70%] sm:rounded-3xl sm:shadow-xl sm:p-8 sm:grid sm:grid-cols-2 text-Charcoal-Grey'>
+    <section className='w-full h-full  bg-light lg:w-[70%] lg:h-[70%] lg:rounded-3xl lg:shadow-xl lg:p-8 lg:grid  lg:grid-cols-2 lg:grid-rows-1 text-Charcoal-Grey'>
+      <div className='block lg:hidden bg-backgroundMobile bg-center bg-cover  w-full h-72 bg-no-repeat'/>
       <SignupDetail/>
-      <div className='bg-backgroundMobile bg-contain bg-no-repeat sm:bg-right sm:bg-backgroundDesktop '></div>
+      <div className='hidden lg:block bg-center bg-contain bg-no-repeat lg:bg-backgroundDesktop lg:bg-right'/>
     </section>
-  </section>
   )
 }
 
